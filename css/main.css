@@ -1,98 +1,76 @@
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
 
 body {
-background: #74ebd5; /* Old browsers */
-background: -moz-linear-gradient(left, #74ebd5 0%, #acb6e5 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #74ebd5 0%,#acb6e5 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #74ebd5 0%,#acb6e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #74ebd5; /* Old browsers */
+	background: -moz-linear-gradient(left, #74ebd5 0%, #acb6e5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #74ebd5 0%,#acb6e5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #74ebd5 0%,#acb6e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	background-size: 200% 200%;
 	-webkit-animation: Animation 5s ease infinite;
     -moz-animation: Animation 5s ease infinite;
     animation: Animation 5s ease infinite;
+	height: 100%;
 }
 
-@-webkit-keyframes Animation {
-    0%{background-position:10% 0%}
-    50%{background-position:91% 100%}
-    100%{background-position:10% 0%}
-}
-@-moz-keyframes Animation {
-    0%{background-position:10% 0%}
-    50%{background-position:91% 100%}
-    100%{background-position:10% 0%}
-}
-@keyframes Animation { 
-    0%{background-position:10% 0%}
-    50%{background-position:91% 100%}
-    100%{background-position:10% 0%}
+/* Animation Gradient */
+	@-webkit-keyframes Animation {
+		0%{background-position:10% 0%}
+		50%{background-position:91% 100%}
+		100%{background-position:10% 0%}
+	}
+	@-moz-keyframes Animation {
+		0%{background-position:10% 0%}
+		50%{background-position:91% 100%}
+		100%{background-position:10% 0%}
+	}
+	@keyframes Animation { 
+		0%{background-position:10% 0%}
+		50%{background-position:91% 100%}
+		100%{background-position:10% 0%}
 
-}
+	}
+/* Animation Gradient */
 
+
+/* Titel Font & Animation */
 #title {
-		font-family: 'Poppins', sans-serif;
-		font-weight: 500;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
 		font-size: 80px;
-		padding-top:95px;
-        margin-bottom:60px;
+		opacity: 1;
+  		animation-name: topFadeOut;
+  		animation-duration: 5s;
+}
+
+#subtitle {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 100;
+		padding-left:13px;
 		opacity: 1;
   		animation-name: topFadeOut;
   		animation-duration: 5s;
 }
  
  
-@keyframes topFadeOut {
-  0% {
-    opacity: 0;
-  }
+	@keyframes topFadeOut 
+	{
+		  0% {
+			opacity: 0;
+		  }
+		  100% {
+			opacity: 1;
+		  }
+	}
+/* Animation Title */
 
-
-  100% {
-    opacity: 1;
-  }
-}
-
-
-.klaar-false {
-	color:red;
-	text-decoration: line-through;
-	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
-}
-
-.klaar-true {
-	color:green;
-}
 
 .centered {
   position: fixed;
   top: 20%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
-
-p, span {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-}
-
-input[type=submit] {
-    padding:5px 15px; 
-    background:#ccc; 
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; 
-}
-
-input[type=submit]:hover {
-    background-color: #20e3b2;
-}
-
-
-
-
 
 
 .imgsize {

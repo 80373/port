@@ -3,20 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <title>Dylan M</title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
+	  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <!--Optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <!--Import main.css-->
+	  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
 	
 	<div class="centered">
 		<p id="title">Dylan Mawlud</p>
-		
-		<div class="centered">
-			<img src="img/aqua.png" alt="Aqua" class="imgsize">
-			<img src="img/pos_ig.png" alt="Instagram" class="imgsize">
-			<img src="img/pos_app.png" alt="App" class="imgsize">
-		</div>
+		<p id="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, sit.</p>
+				 
 	</div>
 	
+	
+	 <ul id="slide-out" class="sidenav">
+    	<li><div class="user-view">
+		  <div class="background">
+			<img src="img/sidenav_bg.png">
+		  </div>
+			
+			  <a href="#!user"><img class="circle" src="img/profile.jpg"></a>
+			  <a href="#!name"><span class="white-text name">Dylan Mawlud</span></a>
+			  <a href="#!email"><span class="white-text email">dylan98d@hotmail.com</span></a>
+    		</div></li>
+		 
+			<li><a href="../aqua"><i class="material-icons">web</i>Aquarium</a></li>
+			<li><a href="#!" onClick="toasts">Second Link</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Subheader</a></li>
+			<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  	</ul>
+	
+  	<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">list</i></a>
+	
+	
+
+
+         
+
+	
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script src="js/jquery-3.3.1.js"></script> 
+	<script src="js/effects.js"></script>
+
 </body>
 </html>
